@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Magic Merge — a cozy merge puzzle with Lily</title>
+<meta name="description" content="Magic Merge is a cozy iOS merge puzzle whose heart is Lily, a fairy who lives in the corner of your screen. Free on iPhone and iPad.">
+<style>
+  :root {
+    --lily: #E8A4F2;
+    --lily-soft: #F5D9F7;
+    --ink: #1A1424;
+    --ink-soft: #4B3F5E;
+    --bg: #FBF7FE;
+    --card: #FFFFFF;
+    --shadow: 0 10px 40px rgba(74, 35, 105, 0.08);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.55;
+    padding: 32px 20px 80px;
+    min-height: 100vh;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+
+  header { text-align: center; padding: 48px 0 24px; }
+  .mark {
+    display: inline-block;
+    font-size: 56px;
+    margin-bottom: 16px;
+    filter: drop-shadow(0 4px 12px rgba(232, 164, 242, 0.4));
+  }
+  h1 {
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 12px;
+  }
+  .tagline {
+    color: var(--ink-soft);
+    font-size: 18px;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  .cta {
+    text-align: center;
+    margin: 40px 0 56px;
+  }
+  .badge {
+    display: inline-block;
+    background: var(--ink);
+    color: #fff;
+    padding: 16px 32px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 17px;
+    box-shadow: var(--shadow);
+    transition: transform 0.15s ease;
+  }
+  .badge:hover { transform: translateY(-1px); }
+  .badge small {
+    display: block;
+    font-size: 11px;
+    font-weight: 400;
+    opacity: 0.7;
+    margin-bottom: 2px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+
+  .blurb {
+    background: var(--card);
+    border-radius: 16px;
+    padding: 28px 28px;
+    margin-bottom: 40px;
+    box-shadow: var(--shadow);
+    font-size: 16px;
+    color: var(--ink-soft);
+  }
+  .blurb p + p { margin-top: 14px; }
+  .blurb strong { color: var(--ink); font-weight: 600; }
+
+  .features {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-bottom: 48px;
+  }
+  @media (min-width: 640px) {
+    .features { grid-template-columns: repeat(3, 1fr); }
+  }
+  .feature {
+    background: var(--card);
+    border-radius: 14px;
+    padding: 22px 20px;
+    box-shadow: var(--shadow);
+    border-left: 3px solid var(--lily);
+  }
+  .feature h3 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: var(--ink);
+  }
+  .feature p {
+    font-size: 14px;
+    color: var(--ink-soft);
+    line-height: 1.5;
+  }
+
+  .meta {
+    text-align: center;
+    padding: 32px 0 16px;
+    border-top: 1px solid var(--lily-soft);
+    color: var(--ink-soft);
+    font-size: 14px;
+  }
+  .meta p { margin-bottom: 8px; }
+  .meta a { color: var(--ink); text-decoration: none; border-bottom: 1px dashed var(--lily); }
+  .meta a:hover { border-bottom-style: solid; }
+
+  footer {
+    text-align: center;
+    padding-top: 24px;
+    font-size: 13px;
+    color: var(--ink-soft);
+  }
+  footer nav {
+    margin-bottom: 12px;
+  }
+  footer nav a {
+    color: var(--ink-soft);
+    text-decoration: none;
+    margin: 0 10px;
+    border-bottom: 1px dashed transparent;
+  }
+  footer nav a:hover { border-bottom-color: var(--lily); }
+  .copy { opacity: 0.7; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="mark" aria-hidden="true">🧚‍♀️</div>
+  <h1>Magic Merge</h1>
+  <p class="tagline">A cozy merge puzzle with Lily, the fairy who lives in the corner of your screen.</p>
+</header>
+
+<div class="cta">
+  <a class="badge" href="https://apps.apple.com/us/app/magic-merge/id6772005772">
+    <small>Download on the</small>
+    App Store
+  </a>
+</div>
+
+<div class="blurb">
+  <p><strong>Magic Merge</strong> is a cozy merge puzzle for iOS where every drag is a tiny spell. You combine items across nine merge lines and twelve tiers (108 items total), tend a quiet garden on a second tab, and slowly piece together a 27-episode story told by three small voices — Lily the fairy, Root the gardener, and Saffi the owl.</p>
+  <p>Monetization is honest mid-tier f2p: energy that regenerates, optional rewarded ads (you choose to watch), removable interstitials between level-ups, and a one-time $9.99 Remove Ads IAP. What's gone from the genre standard: no PvP, no level walls, no FOMO events, no banner ads. Built in three months by a solo developer in Illinois, entirely in native SwiftUI for iOS 17+.</p>
+</div>
+
+<div class="features">
+  <div class="feature">
+    <h3>Lily who pays attention</h3>
+    <p>A fairy companion who notices when you've been still, gently flies to a useful pair, and remembers your habits.</p>
+  </div>
+  <div class="feature">
+    <h3>Native iOS craft</h3>
+    <p>SwiftUI, Live Activity, widgets, App Intents, and four passes on the Core Haptics engine.</p>
+  </div>
+  <div class="feature">
+    <h3>Free, with optional Remove Ads</h3>
+    <p>One-time $9.99 IAP removes both rewarded and interstitial ads forever. Cosmetic outfit IAP for Lily is separate.</p>
+  </div>
+</div>
+
+<div class="meta">
+  <p>Available worldwide on the App Store · iPhone and iPad · iOS 17 and later</p>
+  <p>English, Russian, Latin American Spanish · 566 hand-translated strings</p>
+</div>
+
+<footer>
+  <nav>
+    <a href="https://telegra.ph/Privacy-Policy--Magic-Merge-05-22">Privacy</a>
+    <a href="/support.html">Support</a>
+    <a href="mailto:tsyrenov1987@gmail.com">Contact</a>
+    <a href="https://apps.apple.com/us/app/magic-merge/id6772005772">App Store</a>
+  </nav>
+  <div class="copy">© 2026 NT Vibe Studios</div>
+</footer>
+
+</div>
+</body>
+</html>
