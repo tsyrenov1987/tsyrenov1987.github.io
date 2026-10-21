@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Политика конфиденциальности — Magic Merge для Android</title>
+<meta name="description" content="Какие данные собирает Magic Merge для Android (RuStore) и куда они уходят. Privacy policy of Magic Merge for Android.">
+<style>
+  :root {
+    --lily: #E8A4F2;
+    --lily-soft: #F5D9F7;
+    --ink: #1A1424;
+    --ink-soft: #4B3F5E;
+    --bg: #FBF7FE;
+    --card: #FFFFFF;
+    --shadow: 0 10px 40px rgba(74, 35, 105, 0.08);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.6;
+    padding: 32px 20px 80px;
+  }
+  .wrap { max-width: 640px; margin: 0 auto; }
+
+  .lang {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 32px;
+    font-size: 14px;
+  }
+  .lang a {
+    color: var(--ink-soft);
+    text-decoration: none;
+    border-bottom: 1px dashed var(--lily);
+  }
+
+  section {
+    background: var(--card);
+    border-radius: 14px;
+    padding: 28px 24px;
+    margin-bottom: 40px;
+    box-shadow: var(--shadow);
+  }
+  h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    letter-spacing: -0.3px;
+    line-height: 1.25;
+  }
+  .date {
+    color: var(--ink-soft);
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+  h2 {
+    font-size: 19px;
+    font-weight: 600;
+    margin: 28px 0 10px;
+    letter-spacing: -0.2px;
+  }
+  p, li {
+    color: var(--ink-soft);
+    font-size: 15px;
+  }
+  p + p { margin-top: 10px; }
+  ul { margin: 10px 0 10px 20px; }
+  li + li { margin-top: 6px; }
+  a { color: var(--ink); overflow-wrap: anywhere; }
+
+  footer {
+    text-align: center;
+    margin-top: 16px;
+    padding-top: 24px;
+    border-top: 1px solid var(--lily-soft);
+    font-size: 13px;
+    color: var(--ink-soft);
+  }
+  footer nav { margin-bottom: 12px; }
+  footer nav a {
+    color: var(--ink-soft);
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  .copy { opacity: 0.7; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<nav class="lang">
+  <a href="#ru">Русский</a>
+  <a href="#en">English</a>
+</nav>
+
+<section id="ru">
+<h1>Политика конфиденциальности Magic Merge для Android</h1>
+<p class="date">Редакция от 20 октября 2026 года</p>
+
+<p>Здесь описано, какие данные собирает игра «Magic Merge: мерж и слияние» (пакет com.magicmerginggifts.app) и куда они уходят. В RuStore игру публикует разработчик Versetti Tommy. По вопросам о данных пишите на <a href="mailto:tsyrenov1987@gmail.com">tsyrenov1987@gmail.com</a>.</p>
+
+<h2>Без входа в аккаунт</h2>
+<p>Играть можно без регистрации. Уровень, очки, энергия, монеты, предметы на поле, сад и настройки хранятся на телефоне. Если в Android включено резервное копирование, система сохраняет эти данные в вашем аккаунте Google и переносит их на новый телефон.</p>
+<p>Даже без входа игра отправляет статистику игровых событий и отчёты о сбоях. Кто их получает, сказано ниже в разделе «Аналитика и сбои».</p>
+
+<h2>Если войти через Google</h2>
+<p>Вход нужен для облачного сохранения, рейтинга и друзей. После входа в базу Google Firebase попадают:</p>
+<ul>
+  <li>имя из аккаунта Google и номер игрока (uid), который выдаёт Firebase;</li>
+  <li>прогресс игры, чтобы его можно было восстановить на другом телефоне;</li>
+  <li>строка в общем рейтинге с вашим именем и очками. Её видят все игроки, которые вошли в аккаунт;</li>
+  <li>ваш сад. Его могут открыть другие игроки, которые вошли в аккаунт;</li>
+  <li>друзья: имя и uid каждого друга, заявки в друзья, подарки энергии с именем отправителя;</li>
+  <li>приглашения: кто кого пригласил по коду (uid пригласившего и имя нового игрока).</li>
+</ul>
+<p>Свой адрес почты игра нигде не сохраняет и никому не показывает. Он хранится только в учётной записи сервиса входа Firebase Authentication.</p>
+
+<h2>Аналитика и сбои</h2>
+<p>Firebase Analytics (Google) получает события игры, например: прохождение обучения, слияния, новый уровень, закончилась энергия, открыт магазин, выполнено задание. Вместе с ними уходят модель телефона, версия Android и игры, идентификатор установки и примерная страна по IP-адресу. После входа добавляется uid. Firebase Analytics может использовать рекламный идентификатор Android.</p>
+<p>Firebase Crashlytics (Google) и Tracer (VK) получают отчёты о сбоях и зависаниях: место ошибки в коде, модель телефона, версии Android и игры. В Crashlytics после входа добавляется uid.</p>
+<p>Firebase Remote Config (Google) загружает настройки игры с сервера. Firebase App Check (Google) через Play Integrity проверяет, что запросы к базе отправляет настоящая копия игры.</p>
+
+<h2>Реклама</h2>
+<p>В игре есть только ролики за награду: посмотрели ролик и получили энергию. Ролик запускается, только когда вы сами нажимаете кнопку. Пока вы ни разу её не нажали, рекламный SDK не включается.</p>
+<p>Ролики показывает Рекламная сеть Яндекса через Yandex Mobile Ads SDK. Чтобы подобрать и показать рекламу, SDK получает рекламный идентификатор Android, IP-адрес и технические данные телефона. Рекламный идентификатор можно сбросить или отключить персонализацию рекламы в настройках Android.</p>
+
+<h2>RuStore</h2>
+<p>Через RuStore SDK игра предлагает оставить отзыв и проверяет, вышло ли обновление. Эти данные обрабатывает RuStore.</p>
+
+<h2>Уведомления</h2>
+<p>Уведомления о восстановленной энергии игра создаёт на самом телефоне, через сервер они не идут. Выключить их можно в настройках Android: Приложения → Magic Merge → Уведомления.</p>
+
+<h2>Разрешения</h2>
+<p>Игра использует интернет, состояние сети, вибрацию и уведомления. Рекламный SDK и Firebase добавляют доступ к рекламному идентификатору и источнику установки. Камеру, микрофон, контакты, геолокацию и файлы игра не запрашивает.</p>
+
+<h2>Хранение и удаление</h2>
+<p>Данные на телефоне лежат, пока вы не удалите игру или не очистите её данные в настройках Android.</p>
+<p>Облачные данные хранятся, пока вы не удалите аккаунт: Профиль → «Удалить аккаунт». Игра удаляет сохранение, строку в рейтинге, список друзей, подарки, сад и учётную запись Firebase.</p>
+<p>Сколько хранятся статистика, отчёты о сбоях и рекламные данные, решают Google, VK и Яндекс по своим правилам.</p>
+<p>Если вы хотите получить копию своих данных или удалить их без входа в игру, напишите на <a href="mailto:tsyrenov1987@gmail.com">tsyrenov1987@gmail.com</a>.</p>
+
+<h2>Политики сервисов</h2>
+<ul>
+  <li>Google и Firebase: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>, <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></li>
+  <li>Яндекс: <a href="https://yandex.ru/legal/confidential/">yandex.ru/legal/confidential</a>, <a href="https://yandex.ru/legal/mobileads_sdk_agreement/">yandex.ru/legal/mobileads_sdk_agreement</a></li>
+  <li>Tracer (VK): <a href="https://apptracer.ru/privacy/">apptracer.ru/privacy</a></li>
+  <li>RuStore: <a href="https://www.rustore.ru/help/legal/privacy-policy-users">rustore.ru/help/legal/privacy-policy-users</a></li>
+</ul>
+
+<h2>Изменения</h2>
+<p>Новую редакцию мы публикуем на этой странице и меняем дату вверху.</p>
+</section>
+
+<section id="en" lang="en">
+<h1>Magic Merge for Android: Privacy Policy</h1>
+<p class="date">Last updated October 20, 2026</p>
+
+<p>This page explains what data the game "Magic Merge: мерж и слияние" (package com.magicmerginggifts.app) collects and where it goes. The game is published on RuStore by the developer Versetti Tommy. For questions about your data, email <a href="mailto:tsyrenov1987@gmail.com">tsyrenov1987@gmail.com</a>.</p>
+
+<h2>Without signing in</h2>
+<p>You can play without an account. Your level, score, energy, coins, board items, garden and settings are stored on your phone. If Android backup is turned on, the system saves this data to your Google account and restores it on a new phone.</p>
+<p>Even without signing in, the game sends gameplay event statistics and crash reports. The services that receive them are listed under "Analytics and crashes".</p>
+
+<h2>If you sign in with Google</h2>
+<p>Signing in enables cloud saves, the leaderboard and friends. After you sign in, Google Firebase stores:</p>
+<ul>
+  <li>the name from your Google account and the player ID (uid) issued by Firebase;</li>
+  <li>your game progress, so you can restore it on another phone;</li>
+  <li>a leaderboard entry with your name and score, visible to all signed-in players;</li>
+  <li>your garden, which other signed-in players can visit;</li>
+  <li>friends: each friend's name and uid, friend requests, and energy gifts with the sender's name;</li>
+  <li>invites: who invited whom with a code (the inviter's uid and the new player's name).</li>
+</ul>
+<p>The game does not store or display your email address anywhere. It exists only in your account record in the Firebase Authentication sign-in service.</p>
+
+<h2>Analytics and crashes</h2>
+<p>Firebase Analytics (Google) receives gameplay events such as finishing the tutorial, merges, level-ups, running out of energy, opening the shop and completing quests. With them it receives your phone model, Android and game versions, an installation ID and your approximate country based on IP address. After you sign in, your uid is added. Firebase Analytics may use the Android advertising ID.</p>
+<p>Firebase Crashlytics (Google) and Tracer (VK) receive crash and freeze reports: where in the code the error happened, your phone model, and the Android and game versions. After you sign in, Crashlytics also receives your uid.</p>
+<p>Firebase Remote Config (Google) loads game settings from the server. Firebase App Check (Google) uses Play Integrity to check that database requests come from a genuine copy of the game.</p>
+
+<h2>Ads</h2>
+<p>The only ads are rewarded videos: you watch a video and get energy. A video starts only when you tap the button yourself. Until you tap it for the first time, the ad SDK is not started.</p>
+<p>Videos are served by Yandex Advertising Network through the Yandex Mobile Ads SDK. To select and show an ad, the SDK receives the Android advertising ID, your IP address and technical details about your phone. You can reset the advertising ID or opt out of ad personalization in Android settings.</p>
+
+<h2>RuStore</h2>
+<p>The game uses the RuStore SDK to ask for a review and to check for updates. RuStore processes this data.</p>
+
+<h2>Notifications</h2>
+<p>Notifications about restored energy are created on your phone and do not go through a server. You can turn them off in Android settings: Apps → Magic Merge → Notifications.</p>
+
+<h2>Permissions</h2>
+<p>The game uses internet access, network state, vibration and notifications. The ad SDK and Firebase add access to the advertising ID and the install referrer. The game does not request the camera, microphone, contacts, location or files.</p>
+
+<h2>Retention and deletion</h2>
+<p>Data on your phone stays there until you uninstall the game or clear its data in Android settings.</p>
+<p>Cloud data is kept until you delete your account in Profile → "Удалить аккаунт" (Delete account). The game then deletes your save, leaderboard entry, friends list, gifts, garden and Firebase account.</p>
+<p>Google, VK and Yandex decide how long they keep statistics, crash reports and ad data under their own policies.</p>
+<p>To get a copy of your data, or to have it deleted without opening the game, email <a href="mailto:tsyrenov1987@gmail.com">tsyrenov1987@gmail.com</a>.</p>
+
+<h2>Third-party policies</h2>
+<ul>
+  <li>Google and Firebase: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>, <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></li>
+  <li>Yandex: <a href="https://yandex.ru/legal/confidential/">yandex.ru/legal/confidential</a>, <a href="https://yandex.ru/legal/mobileads_sdk_agreement/">yandex.ru/legal/mobileads_sdk_agreement</a></li>
+  <li>Tracer (VK): <a href="https://apptracer.ru/privacy/">apptracer.ru/privacy</a></li>
+  <li>RuStore: <a href="https://www.rustore.ru/help/legal/privacy-policy-users">rustore.ru/help/legal/privacy-policy-users</a></li>
+</ul>
+
+<h2>Changes</h2>
+<p>We publish each new version on this page and update the date at the top.</p>
+</section>
+
+<footer>
+  <nav>
+    <a href="mailto:tsyrenov1987@gmail.com">Contact</a>
+    <a href="https://www.rustore.ru/catalog/app/com.magicmerginggifts.app">RuStore</a>
+    <a href="/">Home</a>
+  </nav>
+  <div class="copy">© 2026 Versetti Tommy</div>
+</footer>
+
+</div>
+</body>
+</html>
